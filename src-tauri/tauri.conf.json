@@ -7,12 +7,16 @@
         "distDir": "../dist"
     },
     "package": {
-        "productName": "Naria",
+        "productName": "Should I do it？",
         "version": "../package.json"
     },
     "tauri": {
         "allowlist": {
-            "all": false
+            "window": {
+                "setFocus": true,
+                "show": true,
+                "startDragging": true
+            }
         },
         "bundle": {
             "active": true,
@@ -55,11 +59,14 @@
         },
         "windows": [
             {
+                "title": "Should I do it?",
+                "width": 400,
+                "height": 300,
                 "fullscreen": false,
-                "height": 600,
-                "resizable": true,
-                "title": "Naria",
-                "width": 800
+                "resizable": false,
+                "titleBarStyle": "Overlay",
+                "hiddenTitle": true,
+                "visible": false
             }
         ]
     }
