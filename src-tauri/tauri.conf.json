@@ -7,7 +7,7 @@
         "distDir": "../dist"
     },
     "package": {
-        "productName": "template-name-please-replace",
+        "productName": "Naria",
         "version": "../package.json"
     },
     "tauri": {
@@ -29,7 +29,7 @@
                 "icons/icon.icns",
                 "icons/icon.ico"
             ],
-            "identifier": "org.example.template-name-please-replace",
+            "identifier": "work.nyaacinth.naria",
             "longDescription": "",
             "macOS": {
                 "entitlements": null,
@@ -58,7 +58,7 @@
                 "fullscreen": false,
                 "height": 600,
                 "resizable": true,
-                "title": "template-name-please-replace",
+                "title": "Naria",
                 "width": 800
             }
         ]
