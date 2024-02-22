@@ -20,12 +20,17 @@
         "wouter": "^3.0.0"
     },
     "devDependencies": {
+        "@iconify-json/solar": "^1.1.9",
         "@tauri-apps/cli": "^1.5.10",
         "@types/eslint": "^8.56.2",
         "@types/react": "^18.2.57",
         "@types/react-dom": "^18.2.19",
         "@typescript-eslint/eslint-plugin": "^7.0.2",
         "@typescript-eslint/parser": "^7.0.2",
+        "@unocss/preset-icons": "^0.58.5",
+        "@unocss/preset-uno": "^0.58.5",
+        "@unocss/reset": "^0.58.5",
+        "@unocss/transformer-variant-group": "^0.58.5",
         "@vitejs/plugin-react-swc": "^3.6.0",
         "eslint": "^8.56.0",
         "eslint-plugin-react": "^7.33.2",
@@ -33,6 +38,7 @@
         "eslint-plugin-react-refresh": "^0.4.5",
         "prettier": "^3.2.5",
         "typescript": "^5.3.3",
+        "unocss": "^0.58.5",
         "vite": "^5.1.4"
     }
 }
