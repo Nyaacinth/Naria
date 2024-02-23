@@ -1,12 +1,13 @@
 import { motion } from "framer-motion"
 import type { FC } from "react"
-import { useShouldOrNot } from "../hooks/useShouldOrNot"
+import { useRandomBoolean } from "../hooks/useRandomBoolean"
 
-export const Splash: FC = () => {
-    const [shouldOrNot, nextShouldOrNot] = useShouldOrNot()
+export const ShouldOrNot: FC = () => {
+    const [shouldOrNot, nextShouldOrNot] = useRandomBoolean()
 
     return (
         <motion.div
+            initial={false}
             animate={{ backgroundColor: shouldOrNot ? "#A3D383" : "#B383D4" }}
             data-tauri-drag-region
             className={`relative w-full h-full flex flex-col

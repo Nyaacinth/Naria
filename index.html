@@ -26,7 +26,7 @@
         }
 
         /* Disable text selection and I-beam for normal ui, except editable elements */
-        * {
+        :root {
             -webkit-user-select: none;
             user-select: none;
             cursor: default;
@@ -38,6 +38,10 @@
             -webkit-user-select: text;
             user-select: text;
             cursor: text;
+        }
+
+        html {
+            background-color: black;
         }
     </style>
 </html>

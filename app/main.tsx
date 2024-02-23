@@ -1,7 +1,9 @@
 import { createRoot } from "react-dom/client"
-import { Route, Router } from "wouter"
+import { Redirect, Route, Router } from "wouter"
 import { TauriInitActionProvider } from "./providers/TauriInitActionProvider"
-import { Splash } from "./views/Splash"
+import { Magic8Ball } from "./views/Magic8Ball"
+import { ShouldOrNot } from "./views/ShouldOrNot"
+import { ViewNavigator } from "./views/ViewNavigator"
 
 import "@unocss/reset/tailwind-compat.css"
 import "virtual:uno.css"
@@ -9,7 +11,23 @@ import "virtual:uno.css"
 createRoot(document.getElementById("root")!).render(
     <TauriInitActionProvider>
         <Router>
-            <Route path="/" component={Splash} />
+            <Route path="/should-or-not" component={ShouldOrNot} />
+            <Route path="/magic-eight-ball" component={Magic8Ball} />
+            <Route>
+                <Redirect to="/should-or-not" />
+            </Route>
+            <ViewNavigator
+                routes={[
+                    {
+                        path: "/should-or-not",
+                        icon: <div className="i-solar-like-outline" />
+                    },
+                    {
+                        path: "/magic-eight-ball",
+                        icon: <div className="i-solar-chat-dots-linear" />
+                    }
+                ]}
+            />
         </Router>
     </TauriInitActionProvider>
 )
