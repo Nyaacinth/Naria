@@ -15,18 +15,20 @@ export const ShouldOrNot: FC = () => {
                         text-white text-opacity-85 text-shadow-md
                         font-bold text-4xl`}
         >
-            {shouldOrNot ? (
-                <>
-                    <div>Yes👍</div>
-                    <div>just do it!</div>
-                </>
-            ) : (
-                <>
-                    <div>No👎</div>
-                    <div>don&lsquo;t do it!</div>
-                </>
-            )}
-            <div className="absolute bottom-1 font-thin text-xs">
+            <div className="contents pointer-events-none">
+                {shouldOrNot ? (
+                    <>
+                        <div>Yes👍</div>
+                        <div>just do it!</div>
+                    </>
+                ) : (
+                    <>
+                        <div>No👎</div>
+                        <div>don&lsquo;t do it!</div>
+                    </>
+                )}
+            </div>
+            <div className="absolute bottom-1 font-thin text-xs pointer-events-none">
                 Notice: you shouldn&lsquo;t use this in serious scenarios
             </div>
             <button className="absolute top-5 right-5 bg-transparent text-xl" onClick={nextShouldOrNot}>
