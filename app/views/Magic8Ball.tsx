@@ -14,7 +14,7 @@ export const Magic8Ball: FC = () => {
             animate={{
                 backgroundColor: !hasQuestion
                     ? "#83D48B"
-                    : ["#83D48B", "#A3D383", "#CCD483", "#B383D4"][Math.floor(possibilityPercentage / 25)]
+                    : ["#83D48B", "#A3D383", "#CCD483", "#B383D4"].reverse()[Math.floor(possibilityPercentage / 25)]
             }}
             data-tauri-drag-region
             className={`relative w-full h-full flex flex-col
