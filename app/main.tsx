@@ -24,7 +24,7 @@ createRoot(document.getElementById("root")!).render(
                     },
                     {
                         path: "/magic-eight-ball",
-                        icon: <div className="i-solar-chat-dots-linear" />
+                        icon: <div className="i-solar-slash-circle-outline" />
                     }
                 ]}
             />
