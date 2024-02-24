@@ -1,8 +1,8 @@
 import { appWindow } from "@tauri-apps/api/window"
-import type { FC, ReactNode } from "react"
+import type { FC, PropsWithChildren } from "react"
 import { useEffect } from "react"
 
-export const TauriInitActionProvider: FC<{ children: ReactNode }> = ({ children }) => {
+export const TauriInitActionProvider: FC<PropsWithChildren> = ({ children }) => {
     useEffect(() => {
         if (!(window as any).__TAURI__) return
 

@@ -1,9 +1,11 @@
 import { motion } from "framer-motion"
 import { FC, useState } from "react"
-import { useMagic8BallAnswer } from "../hooks/useMagic8BallAnswer"
+import { useTranslation } from "react-i18next"
+import { useMagic8BallAnswerTranslationKey } from "../hooks/useMagic8BallAnswerTranslationKey"
 
 export const Magic8Ball: FC = () => {
-    const [answer, possibilityPercentage, nextAnswer] = useMagic8BallAnswer()
+    const { t } = useTranslation()
+    const [answerTranslationKey, possibilityPercentage, nextAnswer] = useMagic8BallAnswerTranslationKey()
     const [question, setQuestion] = useState("")
     const [hasQuestion, setHasQuestion] = useState(false)
     const [shouldDisableSubmit, setShouldDisableSubmit] = useState(false)
@@ -26,7 +28,7 @@ export const Magic8Ball: FC = () => {
                 <>
                     <input
                         className="appearance-none w-4/5 h-10 bg-white text-black outline-none text-center text-xl caret-blue rounded-full shadow-md shadow-inset"
-                        placeholder="Ask a question"
+                        placeholder={t("magic-eight-ball.ask-question-placeholder")}
                         onChange={(event) => setQuestion(event.target.value)}
                         disabled={shouldDisableSubmit}
                     />
@@ -56,8 +58,8 @@ export const Magic8Ball: FC = () => {
                 </>
             ) : (
                 <>
-                    <div className="contents pointer-events-none">{answer}</div>
-                    <div className="text-sm">~{possibilityPercentage}%</div>
+                    <div className="contents pointer-events-none">{t(answerTranslationKey)}</div>
+                    <div className="text-sm pointer-events-none">~{possibilityPercentage}%</div>
                     <button
                         className="absolute bottom-20% bg-black p-2 rounded-full shadow-md"
                         onClick={() => {
@@ -71,7 +73,7 @@ export const Magic8Ball: FC = () => {
                 </>
             )}
             <div className="absolute bottom-1 font-thin text-xs pointer-events-none">
-                Notice: you shouldn&lsquo;t use this in serious scenarios
+                {t("magic-eight-ball.notice")}
             </div>
         </motion.div>
     )
