@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "private": true,
     "type": "module",
-    "packageManager": "pnpm@8.15.3",
+    "packageManager": "pnpm@8.15.4",
     "scripts": {
         "serve-frontend-dev": "vite",
         "build-frontend": "tsc && eslint . && vite build",
