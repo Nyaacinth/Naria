@@ -1,11 +1,11 @@
 import { motion } from "framer-motion"
 import { FC, useState } from "react"
 import { useTranslation } from "react-i18next"
-import { useMagic8BallAnswerTranslationKey } from "../hooks/useMagic8BallAnswerTranslationKey"
+import { useMagic8BallAnswer } from "../hooks/useMagic8BallAnswerTranslationKey"
 
 export const Magic8Ball: FC = () => {
     const { t } = useTranslation()
-    const [answerTranslationKey, possibilityPercentage, nextAnswer] = useMagic8BallAnswerTranslationKey()
+    const [answer, possibilityPercentage, nextAnswer] = useMagic8BallAnswer()
     const [question, setQuestion] = useState("")
     const [hasQuestion, setHasQuestion] = useState(false)
     const [shouldDisableSubmit, setShouldDisableSubmit] = useState(false)
@@ -58,7 +58,7 @@ export const Magic8Ball: FC = () => {
                 </>
             ) : (
                 <>
-                    <div className="contents pointer-events-none">{t(answerTranslationKey)}</div>
+                    <div className="contents pointer-events-none">{answer}</div>
                     <div className="text-sm pointer-events-none">~{possibilityPercentage}%</div>
                     <button
                         className="absolute bottom-20% bg-black p-2 rounded-full shadow-md"
