@@ -12,37 +12,37 @@
     },
     "dependencies": {
         "@tauri-apps/api": "^1.5.3",
-        "framer-motion": "^11.0.6",
+        "framer-motion": "^11.0.8",
         "i18next": "^23.10.0",
         "i18next-browser-languagedetector": "^7.2.0",
-        "jotai": "^2.6.5",
+        "jotai": "^2.7.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-i18next": "^14.0.5",
         "react-use": "^17.5.0",
         "swr": "^2.2.5",
-        "wouter": "^3.0.0"
+        "wouter": "^3.0.1"
     },
     "devDependencies": {
         "@iconify-json/solar": "^1.1.9",
         "@tauri-apps/cli": "^1.5.10",
-        "@types/eslint": "^8.56.3",
-        "@types/react": "^18.2.58",
-        "@types/react-dom": "^18.2.19",
-        "@typescript-eslint/eslint-plugin": "^7.0.2",
-        "@typescript-eslint/parser": "^7.0.2",
+        "@types/eslint": "^8.56.5",
+        "@types/react": "^18.2.63",
+        "@types/react-dom": "^18.2.20",
+        "@typescript-eslint/eslint-plugin": "^7.1.1",
+        "@typescript-eslint/parser": "^7.1.1",
         "@unocss/preset-icons": "^0.58.5",
         "@unocss/preset-uno": "^0.58.5",
         "@unocss/reset": "^0.58.5",
         "@unocss/transformer-variant-group": "^0.58.5",
         "@vitejs/plugin-react-swc": "^3.6.0",
         "eslint": "^8.57.0",
-        "eslint-plugin-react": "^7.33.2",
+        "eslint-plugin-react": "^7.34.0",
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-react-refresh": "^0.4.5",
         "prettier": "^3.2.5",
         "typescript": "^5.3.3",
         "unocss": "^0.58.5",
-        "vite": "^5.1.4"
+        "vite": "^5.1.5"
     }
 }
