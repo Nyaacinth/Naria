@@ -6,6 +6,7 @@ import { Magic8Ball } from "./views/Magic8Ball"
 import { ShouldOrNot } from "./views/ShouldOrNot"
 import { ViewNavigator } from "./views/ViewNavigator"
 
+import "@nyaacinth/webview-nativefy.css/webview-nativefy.css"
 import "@unocss/reset/tailwind-compat.css"
 import "virtual:uno.css"
 
