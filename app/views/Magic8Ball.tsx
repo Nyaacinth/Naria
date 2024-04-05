@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import { FC, useState } from "react"
 import { useTranslation } from "react-i18next"
-import { useMagic8BallAnswer } from "../hooks/useMagic8BallAnswerTranslationKey"
+import { useMagic8BallAnswer } from "../hooks/useMagic8BallAnswer"
 
 export const Magic8Ball: FC = () => {
     const { t } = useTranslation()

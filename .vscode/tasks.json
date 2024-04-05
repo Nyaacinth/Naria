@@ -3,7 +3,7 @@
     "tasks": [
         {
             "label": "Build App",
-            "type": "npm",
+            "type": "bun",
             "script": "build-app",
             "group": {
                 "kind": "build",

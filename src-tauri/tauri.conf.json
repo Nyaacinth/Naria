@@ -1,8 +1,8 @@
 {
     "$schema": "../node_modules/@tauri-apps/cli/schema.json",
     "build": {
-        "beforeBuildCommand": "pnpm run build-frontend",
-        "beforeDevCommand": "pnpm run serve-frontend-dev --port 5173 --strictPort",
+        "beforeBuildCommand": "bun run build-frontend",
+        "beforeDevCommand": "bun run serve-frontend-dev --port 5173 --strictPort",
         "devPath": "http://localhost:5173",
         "distDir": "../dist"
     },
