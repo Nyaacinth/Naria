@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "private": true,
     "type": "module",
-    "packageManager": "bun@1.1.1",
+    "packageManager": "bun@1.1.3",
     "scripts": {
         "serve-frontend-dev": "vite",
         "build-frontend": "tsc && eslint . && vite build",
